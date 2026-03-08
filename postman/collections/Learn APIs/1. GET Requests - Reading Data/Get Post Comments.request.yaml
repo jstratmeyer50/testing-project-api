@@ -1,0 +1,17 @@
+$kind: http-request
+name: Get Post Comments
+method: GET
+url: '{{base_url}}/posts/1/comments'
+order: 3000
+description: |-
+  Fetches all comments for a specific post.
+  
+  This demonstrates nested resources - accessing related data through a parent resource:
+  - /posts/1/comments → all comments belonging to post 1
+  
+  This is a common REST pattern for representing relationships between resources. Each comment includes:
+  - id: Comment ID
+  - postId: The post this comment belongs to
+  - name: Commenter's name
+  - email: Commenter's email
+  - body: Comment content

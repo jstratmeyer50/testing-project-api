@@ -1,0 +1,31 @@
+$kind: http-request
+name: Update Entire Post
+method: PUT
+url: '{{base_url}}/posts/1'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+    description: Tells the server we're sending JSON data
+body:
+  type: json
+  content: |-
+    {
+      "id": 1,
+      "title": "Updated Title",
+      "body": "Updated content",
+      "userId": 1
+    }
+description: |-
+  Updates an entire post by replacing it with new data.
+  
+  Key concepts:
+  1. URL includes the resource ID: /posts/1 specifies which post to update
+  2. Request body contains ALL fields: Even unchanged fields must be included
+  3. The id in the body should match the URL
+  
+  PUT vs POST:
+  - POST /posts → creates a NEW post
+  - PUT /posts/1 → replaces EXISTING post with ID 1
+  
+  Warning: If you omit a field (like userId), it may be removed from the resource!

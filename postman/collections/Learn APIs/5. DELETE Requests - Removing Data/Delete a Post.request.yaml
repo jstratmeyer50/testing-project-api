@@ -1,0 +1,20 @@
+$kind: http-request
+name: Delete a Post
+method: DELETE
+url: '{{base_url}}/posts/1'
+order: 1000
+description: |-
+  Deletes a post by its ID.
+  
+  Key concepts:
+  1. URL specifies the resource to delete: /posts/1
+  2. No request body needed
+  3. JSONPlaceholder returns 200 OK with empty object {}
+  
+  Common DELETE response patterns:
+  - 200 OK: Success, may include deleted resource
+  - 204 No Content: Success, empty response
+  - 404 Not Found: Resource doesn't exist
+  - 403 Forbidden: Not authorized to delete
+  
+  Note: JSONPlaceholder simulates deletion - the post isn't actually removed, so you can run this multiple times.

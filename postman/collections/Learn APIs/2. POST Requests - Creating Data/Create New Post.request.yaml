@@ -1,0 +1,28 @@
+$kind: http-request
+name: Create New Post
+method: POST
+url: '{{base_url}}/posts'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+    description: Tells the server we're sending JSON data
+body:
+  type: json
+  content: |-
+    {
+      "title": "My New Post",
+      "body": "This is the content",
+      "userId": 1
+    }
+description: |-
+  Creates a new post by sending data in the request body.
+  
+  Key concepts:
+  1. Content-Type header: Tells the server the format of our data (application/json)
+  2. Request body: Contains the data for the new resource as JSON
+  3. Response: Returns the created resource with a new ID (101 in this case)
+  
+  The server assigns the ID - we don't include it in our request.
+  
+  Try modifying the title and body values to create different posts!

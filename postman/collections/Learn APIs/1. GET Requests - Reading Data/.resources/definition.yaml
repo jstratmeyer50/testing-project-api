@@ -1,0 +1,8 @@
+$kind: collection
+description: |-
+  GET requests are used to retrieve data from a server. They are:
+  - Safe: They don't modify any data on the server
+  - Idempotent: Making the same request multiple times returns the same result
+  - Cacheable: Responses can be cached for performance
+  
+  This folder demonstrates common GET request patterns including fetching lists, single items, nested resources, and filtering with query parameters.

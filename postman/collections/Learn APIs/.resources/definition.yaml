@@ -1,0 +1,16 @@
+$kind: collection
+name: Learn APIs
+description: |-
+  A hands-on learning collection for understanding REST API fundamentals using JSONPlaceholder - a free fake REST API for testing and prototyping.
+  
+  This collection covers the five main HTTP methods:
+  - GET: Reading/retrieving data
+  - POST: Creating new data
+  - PUT: Updating entire resources
+  - PATCH: Partial updates
+  - DELETE: Removing data
+  
+  Work through each folder in order to build your understanding of how REST APIs work!
+variables:
+  - key: base_url
+    value: 'https://jsonplaceholder.typicode.com'

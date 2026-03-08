@@ -1,0 +1,13 @@
+$kind: http-request
+name: Get Single Post
+method: GET
+url: '{{base_url}}/posts/1'
+order: 2000
+description: |-
+  Fetches a single post by its ID.
+  
+  This demonstrates the RESTful pattern of accessing a specific resource by appending its ID to the collection URL:
+  - /posts → all posts (collection)
+  - /posts/1 → post with ID 1 (single resource)
+  
+  Try changing the ID in the URL to fetch different posts (1-100 are valid).

@@ -1,0 +1,10 @@
+$kind: collection
+description: |-
+  PUT requests are used to update an entire resource. They are:
+  - Not safe: They modify data on the server
+  - Idempotent: Making the same request multiple times has the same effect
+  - Replace the entire resource: You must send ALL fields, not just changed ones
+  
+  PUT is like replacing a file - the new version completely overwrites the old one.
+  
+  If you omit a field in a PUT request, it may be removed or set to null!

@@ -1,0 +1,31 @@
+$kind: http-request
+name: Update Post Title Only
+method: PATCH
+url: '{{base_url}}/posts/1'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+    description: Tells the server we're sending JSON data
+body:
+  type: json
+  content: |-
+    {
+      "title": "Just the title changed"
+    }
+description: |-
+  Updates only the title of a post, leaving other fields unchanged.
+  
+  Key concepts:
+  1. Only include fields you want to change
+  2. Other fields (body, userId) remain untouched
+  3. More efficient for small updates
+  
+  PATCH vs PUT:
+  - PUT: Send entire resource, replaces everything
+  - PATCH: Send only changes, merges with existing data
+  
+  Use PATCH when:
+  - Updating one or few fields
+  - You don't have/need all the current data
+  - Minimizing data transfer

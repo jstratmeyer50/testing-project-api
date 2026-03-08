@@ -1,0 +1,15 @@
+$kind: http-request
+name: Get All Posts
+method: GET
+url: '{{base_url}}/posts'
+order: 1000
+description: |-
+  Fetches a list of all posts from the API.
+  
+  This is a common pattern for retrieving collections of resources. The response will be a JSON array containing 100 post objects.
+  
+  Each post has:
+  - id: Unique identifier
+  - title: Post title
+  - body: Post content
+  - userId: ID of the user who created it

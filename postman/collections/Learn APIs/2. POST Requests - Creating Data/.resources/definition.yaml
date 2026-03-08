@@ -1,0 +1,10 @@
+$kind: collection
+description: |-
+  POST requests are used to create new resources on the server. They are:
+  - Not safe: They modify data on the server
+  - Not idempotent: Each request creates a new resource
+  - Include a request body: The data for the new resource
+  
+  POST requests typically return the created resource with a new ID assigned by the server.
+  
+  Note: JSONPlaceholder simulates creation - it returns what would be created but doesn't actually persist the data.

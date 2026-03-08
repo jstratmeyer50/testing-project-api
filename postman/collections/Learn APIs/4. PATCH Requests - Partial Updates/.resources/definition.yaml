@@ -1,0 +1,10 @@
+$kind: collection
+description: |-
+  PATCH requests are used for partial updates to a resource. They are:
+  - Not safe: They modify data on the server
+  - Not necessarily idempotent: Depends on implementation
+  - Only send changed fields: More efficient than PUT for small changes
+  
+  PATCH is like editing a document - you only specify what you want to change, and everything else stays the same.
+  
+  This is more efficient than PUT when you only need to update one or two fields.

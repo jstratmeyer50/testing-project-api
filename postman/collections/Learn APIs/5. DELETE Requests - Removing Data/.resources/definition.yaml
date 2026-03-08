@@ -1,0 +1,13 @@
+$kind: collection
+description: |-
+  DELETE requests are used to remove resources from the server. They are:
+  - Not safe: They modify (remove) data on the server
+  - Idempotent: Deleting the same resource multiple times has the same effect
+  - Usually no request body: The URL specifies what to delete
+  
+  DELETE requests typically return:
+  - 200 OK with the deleted resource
+  - 204 No Content (empty response)
+  - 404 Not Found if resource doesn't exist
+  
+  Be careful with DELETE - it's usually permanent!
